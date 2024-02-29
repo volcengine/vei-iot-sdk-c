@@ -1,0 +1,4 @@
+Merge Request Notification:
+  notification_lark_group: ['7337271204241571843']
+  check_run: ['all']
+  skip_warning_check_run: true

@@ -1,0 +1,24 @@
+[submodule "libraries/3rdparty/aws-c-common"]
+	path = libraries/3rdparty/aws-c-common
+	url = https://github.com/awslabs/aws-c-common.git
+[submodule "libraries/3rdparty/aws-lc"]
+	path = libraries/3rdparty/aws-lc
+	url = https://github.com/aws/aws-lc.git
+[submodule "libraries/3rdparty/s2n-tls"]
+	path = libraries/3rdparty/s2n-tls
+	url = https://github.com/aws/s2n-tls.git
+[submodule "libraries/3rdparty/aws-c-cal"]
+	path = libraries/3rdparty/aws-c-cal
+	url = https://github.com/awslabs/aws-c-cal.git
+[submodule "libraries/3rdparty/aws-c-io"]
+	path = libraries/3rdparty/aws-c-io
+	url = https://github.com/awslabs/aws-c-io.git
+[submodule "libraries/3rdparty/aws-c-compression"]
+	path = libraries/3rdparty/aws-c-compression
+	url = https://github.com/awslabs/aws-c-compression.git
+[submodule "libraries/3rdparty/aws-c-http"]
+	path = libraries/3rdparty/aws-c-http
+	url = https://github.com/awslabs/aws-c-http.git
+[submodule "libraries/3rdparty/aws-c-mqtt"]
+	path = libraries/3rdparty/aws-c-mqtt
+	url = https://github.com/awslabs/aws-c-mqtt.git

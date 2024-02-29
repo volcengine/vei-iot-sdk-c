@@ -1,0 +1,16 @@
+cmake-build*
+libraries/3rdparty/build/*
+libraries/3rdparty_build/*
+build/*
+.idea/*
+./output.zip
+/log/
+/download/
+*/.DS_Store
+.DS_Store
+examples/use/log/
+examples/use/test
+output/
+output_shared/
+output_static/
+merge/
