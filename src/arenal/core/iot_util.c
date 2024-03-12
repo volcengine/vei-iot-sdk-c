@@ -635,16 +635,10 @@ int str_end_with(const char *originString, char *end) {
 }
 
 struct aws_string* get_user_name(struct aws_allocator * allocator, struct aws_string* product_key, struct aws_string* device_name) {
-    const char* use_name_c_str =  get_user_name_c_str_param(allocator, aws_string_c_str(product_key), aws_string_c_str(device_name));
-    struct aws_string* use_name = aws_string_new_from_c_str(allocator, use_name_c_str);
-    aws_mem_release(allocator, use_name_c_str);
-    return use_name;
-}
-
-const char* get_user_name_c_str_param(struct aws_allocator * allocator, const char* product_key, const char* device_name) {
-    int length = strlen(product_key) + strlen(device_name) + 10;
-    char* username = (char*) aws_mem_acquire(allocator, length);
-    sprintf(username, "%s|%s", aws_string_c_str(product_key), aws_string_c_str(device_name));
-    return username;
+    int length = strlen(aws_string_c_str(product_key)) + strlen(aws_string_c_str(device_name)) + 10;
+    char userNameStr[length];
+    sprintf(userNameStr, "%s|%s", aws_string_c_str(product_key), aws_string_c_str(device_name));
+    LOGD(TAG_IOT_MQTT, "arenal_get_user_name = %s", userNameStr);
+    return aws_string_new_from_c_str(allocator, userNameStr);
 }
 
