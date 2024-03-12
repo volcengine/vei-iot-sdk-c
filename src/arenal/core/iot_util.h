@@ -158,6 +158,4 @@ int str_end_with(const char *originString, char *end);
 
 struct aws_string* get_user_name(struct aws_allocator * allocator, struct aws_string* product_key, struct aws_string* device_name);
 
-const char* get_user_name_c_str_param(struct aws_allocator * allocator, const char* product_key, const char* device_name);
-
 #endif //ARENAL_IOT_IOT_UTIL_H
